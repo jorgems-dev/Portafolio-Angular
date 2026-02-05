@@ -1,0 +1,21 @@
+<section id="perfil" appFadeUp>
+    <div class="div-primer-titulo">
+        <p class="div-text-p1">Hola, soy</p>
+        <h2 class="titulo">Jorge</h2>
+        <p class="div-text-p2">Desarrollador <span class="div-text-sub">Full-stack</span></p>
+        
+        <div class="btn-div">
+            <button class="btn btn-color-1" (click)="descargarCV()">Descargar CV</button>
+            <button class="btn btn-color-2" (click)="irAContacto()">Contactar</button>
+        </div>
+
+        <div id="redes-sociales">
+            <img src="recursos/linkedin.png" alt="Linkedin personal" class="icono" (click)="linkedin()">
+            <img src="recursos/icono-github.png" alt="Github personal" class="icono" (click)="github()">
+        </div>
+    </div>
+
+    <div class="div-perfil-imagen">
+        <img src="recursos/foto-perfil.png" alt="Foto de perfil">
+    </div>
+</section>

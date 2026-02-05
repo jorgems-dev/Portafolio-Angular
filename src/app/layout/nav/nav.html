@@ -1,0 +1,35 @@
+<nav id="nav-principal">
+        <div class="nombre">
+            <a href="#perfil">JMs-dev</a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#experiencia">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="nav-desplegable">
+        <div class="nombre">
+            <a href="#perfil">Jorgems-dev</a>
+        </div>
+        <div class="menu-desplegable">
+            <div class="icono-desplegable"
+                [class.open]="menuAbierto"
+                (click)="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <ul class="menu-links" [class.open]="menuAbierto">
+                    <li><a href="#sobre-mi" (click)="cerrarMenu()">Sobre mi</a></li>
+                    <li><a href="#experiencia" (click)="cerrarMenu()">Habilidades</a></li>
+                    <li><a href="#proyectos" (click)="cerrarMenu()">Proyectos</a></li>
+                    <li><a href="#contacto" (click)="cerrarMenu()">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>

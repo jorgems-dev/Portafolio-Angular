@@ -21,12 +21,18 @@
             "assets": [
               {
                 "glob": "**/*",
+                "input": "src/recursos",
+                "output": "/recursos/"
+              },
+              {
+                "glob": "**/*",
                 "input": "public"
               }
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "baseHref": "./"
           },
           "configurations": {
             "production": {

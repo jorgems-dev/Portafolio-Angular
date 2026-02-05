@@ -1,0 +1,59 @@
+<section id="proyectos" appFadeUp>
+    <p class="div-text-p2-sobre-mi">Algunos de mis</p>
+    <h2 class="titulo-proyectos">Proyectos</h2>
+    <div class="lista-proyectos">
+        
+        <div class="card-proyectos" (click)="restapi()">
+            <h1 class="titulo-proyectos">StreetFit (REST API)</h1>
+            <img src="recursos/logoappsinfondo.png" alt="Foto backend" class="img-backend">
+            
+            <div class="card-badges">
+                <span class="lenguajes">Java</span>
+                <span class="lenguajes">MySQL</span>
+                <span class="badge">Spring Boot</span>                                                                          
+                <span class="badge">Hibernate</span>                                                                          
+                <span class="sistemas">Apache Tomcat embebido</span>   
+                <span class="sistemas">Maven</span>   
+            </div>
+            
+            <p class="texto-proyectos-p1">
+                StreetFit es una API REST desarrollada con Spring Boot que proporciona 
+                servicios CRUD personalizados para gestionar usuarios de tipo Atletas y 
+                Entrenadores. El backend está hecho en Java usando Spring Boot y Hibernate/JPA 
+                para interactuar con una base de datos MySQL. Además, el proyecto incluye un cliente 
+                Android desarrollado en Android Studio con Java, que consume la API mediante Retrofit 
+                para la comunicación entre la app y el servidor.
+            </p>
+            
+            <div class="div-icono-github-proyecto">
+                <img src="recursos/icono-github.png" alt="Github" class="icono-frontend">
+                <a href="https://github.com/jorgems-dev/StreetFit" class="div-text-p1-enlaces-github" (click)="$event.stopPropagation()">Repositorio de Github</a>
+            </div>
+        </div>
+
+        <div class="card-proyectos" (click)="cliente()">
+            <h1 class="titulo-proyectos">StreetFit (Cliente)</h1>
+            <img src="recursos/foto-cliente-streetfit.png" alt="Foto cliente" class="img-cliente">
+            
+            <div class="card-badges">
+                <span class="lenguajes">Java</span>
+                <span class="lenguajes">XML</span>                                                                          
+                <span class="badge">Retrofit</span>
+            </div>
+            
+            <p class="texto-proyectos-p1">
+                Cliente-StreetFit es una aplicación móvil Android desarrollada con Android Studio que funciona 
+                como cliente REST para consumir una API backend construida con Spring Boot. Esta app se comunica 
+                con la API usando Retrofit, una librería que facilita las peticiones HTTP y la conversión de JSON a 
+                objetos Java de forma eficiente. La aplicación permite consultar datos desde el servidor, enviar 
+                información mediante formularios y manejar errores de red.
+            </p>
+            
+            <div class="div-icono-github-proyecto">
+                <img src="recursos/icono-github.png" alt="Github" class="icono-frontend">
+                <a href="https://github.com/jorgems-dev/Cliente-StreetFit" class="div-text-p1-enlaces-github" (click)="$event.stopPropagation()">Repositorio de Github</a>
+            </div>
+        </div>
+
+    </div>
+</section>
